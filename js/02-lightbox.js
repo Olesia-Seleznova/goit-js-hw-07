@@ -33,7 +33,11 @@ function onGalleryPictureClick(event) {
       modalWindow.close();
     }
     const lightbox = new SimpleLightbox('.gallery a', { disableRightClick: true, });
+
+    new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 })
+
 };
+
   
 
     
