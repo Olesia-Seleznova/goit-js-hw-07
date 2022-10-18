@@ -27,15 +27,13 @@ function createGalleryItemMarkup(galleryItems) {
         .join('');
 };
 
+const lightbox = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 })
+
 function onGalleryPictureClick(event) {
   event.preventDefault();
       if (event.key === "Escape") {
       modalWindow.close();
-    }
-    const lightbox = new SimpleLightbox('.gallery a', { disableRightClick: true, });
-
-    new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 })
-
+  };
 };
 
   
